@@ -8,24 +8,46 @@
 </head>
 <body>
     <div class="login-container">
-        <img src="assets/logo.png" alt="Dearie Logo" class="logo">
-        <h2>Welcome to Dearie</h2>
-        <p class="slogan">"Dil Se Pyar Se"</p>
+        <!-- Dearie Logo -->
+        <img src="assets/Dearie.png" alt="Dearie Logo" class="logo">
 
-        <form id="loginForm">
+        <!-- Slogan -->
+        <p class="slogan">"Dil Se, Pyar Se"</p>
+
+        <h2>Welcome to Dearie</h2>
+
+        <!-- Login Form -->
+        <form id="login-form">
             <input type="email" id="email" placeholder="Enter your email" required>
             <input type="password" id="password" placeholder="Enter your password" required>
+
+            <!-- Show Password Checkbox -->
+            <div class="password-toggle">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword" class="show-password-label">Show Password</label>
+            </div>
+
             <button type="submit">Login</button>
+
+            <div class="social-login">
+                <button id="googleLogin">Login with Google</button>
+                <button id="facebookLogin">Login with Facebook</button>
+            </div>
         </form>
-
-        <p><a href="forgot-password.html">Forgot Password?</a></p>
-
-        <div class="social-login">
-            <button id="googleLogin">Login with Google</button>
-            <button id="facebookLogin">Login with Facebook</button>
-        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Toggle Password Visibility
+        document.getElementById('showPassword').addEventListener('change', function () {
+            let passwordInput = document.getElementById('password');
+            passwordInput.type = this.checked ? 'text' : 'password';
+        });
+
+        // Login Redirect
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            window.location.href = "dashboard.html";
+        });
+    </script>
 </body>
 </html>

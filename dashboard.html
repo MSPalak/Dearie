@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dearie - Dashboard</title>
+    <title>Dashboard - Dearie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Dearie Logo" class="logo">
-        <h1>Welcome to Dearie</h1>
-        <p class="slogan">"Dil Se Pyar Se"</p>
-    </header>
 
-    <section class="services">
-        <a href="#">🧁 Bakery</a>
-        <a href="#">🎉 Event Management</a>
-        <a href="#">🍽️ Catering</a>
-        <a href="#">🎁 Gift Packs</a>
-    </section>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="login.html">Logout</a>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="dashboard-container">
+        <!-- Dearie Logo -->
+        <img src="assets/Dearie.png" alt="Dearie Logo" class="logo">
+
+        <h2>Welcome to Dearie</h2>
+        <p class="slogan">"Dil Se, Pyar Se"</p>
+
+        <div class="services">
+            <div class="service-card">
+                <span>🧁</span>
+                <p>Bakery</p>
+            </div>
+            <div class="service-card">
+                <span>🎉</span>
+                <p>Event Management</p>
+            </div>
+            <div class="service-card">
+                <span>🍽️</span>
+                <p>Catering</p>
+            </div>
+            <div class="service-card">
+                <span>🎁</span>
+                <p>Gift Packs</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

@@ -1,112 +1,131 @@
+/* Global Styling */
 body {
+    background-color: #ffe6eb;
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background: #fff3f8;
 }
 
-header {
-    background: #ff66a3;
-    padding: 15px;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-form input, form textarea {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
-}
-
-button {
-    background: #ff66a3;
-    border: none;
-    padding: 10px 15px;
-    color: white;
-    cursor: pointer;
-}
-body {
-    font-family: Arial, sans-serif;
-    background: #fff3f8;
-    text-align: center;
-}
-
+/* Login Container */
 .login-container {
-    max-width: 350px;
-    margin: 50px auto;
+    background-color: white;
+    width: 350px;
+    margin: 80px auto;
     padding: 20px;
-    background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Logo */
 .logo {
-    width: 100px;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+/* Slogan */
+.slogan {
+    font-style: italic;
+    color: #ff3366;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
-.slogan {
-    font-style: italic;
-    color: #ff66a3;
-    margin-bottom: 20px;
-}
-
-input {
-    display: block;
-    width: 100%;
+/* Input Fields */
+input[type="email"], input[type="password"] {
+    width: 90%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
+    margin: 8px 0;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+/* Show Password Toggle */
+.password-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+}
+
+/* Buttons */
 button {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    background: #ff66a3;
+    background-color: #ff6699;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e6005c;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
 .social-login button {
-    background: #4267B2;
-    color: white;
-    width: 100%;
+    width: 48%;
+    background-color: #4267B2;
+}
+
+.social-login #googleLogin {
+    background-color: #DB4437;
+}
+
+/* Dashboard */
+.dashboard-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.dashboard-container h2 {
     margin-top: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    border: none;
-    cursor: pointer;
 }
 
-#googleLogin {
-    background: #DB4437;
-}
-
-p a {
-    color: #ff66a3;
+.navbar a {
+    background-color: #ff6699;
+    color: white;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    background-color: #e6005c;
+}
+
+/* Service Cards */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
 }

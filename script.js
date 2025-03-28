@@ -25,3 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Facebook Login (Backend required)");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordInput = document.querySelector("#password");
+    const showPasswordCheckbox = document.querySelector("#showPassword");
+
+    if (showPasswordCheckbox) {
+        showPasswordCheckbox.addEventListener("change", function () {
+            passwordInput.type = this.checked ? "text" : "password";
+        });
+    }
+});
+
